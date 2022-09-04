@@ -1,0 +1,110 @@
+@media (max-width: 440px) {
+  .header {
+    z-index: 1;
+    margin: 0;
+    padding: 3px 45px 7px 31px;
+    border-radius: 5px;
+    position: fixed;
+    top: 1px;
+    right: 1px;
+    transform: translate(0, -50vw);
+    width: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    transition-duration: 0.5s;
+    background-color: rgba(240, 242, 255, 0.604);
+
+    .logo {
+      width: 32px;
+      margin-left: -11px;
+    }
+
+    .navbar {
+      width: 100%;
+      flex-direction: column;
+
+      .site-navigation {
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 5px;
+        width: auto;
+        gap: 0px;
+
+        &__item {
+          font-size: 5px;
+        }
+      }
+
+      .share {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .social-networks {
+          &__item {
+            width: 8px;
+          }
+        }
+
+        .header-button {
+          width: 50px;
+          height: 15px;
+        }
+      }
+    }
+    &.active {
+      transform: translate(0);
+    }
+  }
+  .menu-btn {
+    transform: translate(0, 0);
+  }
+
+  .main {
+    .welcome-container {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      gap: 20px;
+
+      .title-container {
+        margin-top: 6vh;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+      }
+
+      .images-container {
+        width: 100%;
+        flex-direction: row;
+
+        .img-wrapper
+          .creator-container-wrapper
+          .creator-container.lee-container {
+          bottom: min(25vh, 250px);
+          right: -51%;
+        }
+
+        .img-wrapper {
+          .creator-container-wrapper .creator-container.mia-container {
+            bottom: min(25vh, 250px);
+            left: 8vh;
+            width: 10vw;
+          }
+
+          .mia-potter-picture {
+            bottom: 0;// min(40px, 3vh);
+            width: 30vw;
+            height: auto;
+          }
+          .lee-stone-picture{
+            width: 30vw;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

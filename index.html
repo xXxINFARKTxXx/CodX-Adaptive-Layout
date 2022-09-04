@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header data-header class="header">
+      <a class="logo-container" href="#"><img src="img/header/logo.svg" alt="CodX logo" class="logo" /></a>
+      <nav class="navbar">
+        <div class="site-navigation">
+          <a href="#" class="site-navigation__item">About us</a>
+          <a href="#" class="site-navigation__item">NFTs</a>
+          <a href="#" class="site-navigation__item">Contact</a>
+        </div>
+        <div class="share">
+          <div class="social-networks">
+            <a href="#"
+              ><img
+                src="img/header/twitter.svg"
+                alt="twitter icon"
+                class="social-networks__item"
+              />
+            </a>
+            <a href="#"
+              ><img
+                src="img/header/instagram.svg"
+                alt="instagram icon"
+                class="social-networks__item"
+              />
+            </a>
+            <a href="#"
+              ><img
+                src="img/header/facebook.svg"
+                alt="facebook icon"
+                class="social-networks__item"
+              />
+            </a>
+          </div>
+          <button class="button header-button">View on OpenSea</button>
+        </div>
+      </nav>
+    </header>
+    <button data-button class="menu-btn">————<br />————<br />————</button>
+    <main class="main">
+      <section class="welcome-container">
+        <div class="title-container">
+          <p class="extraodinary">EXTRAORDINARY NFTs</p>
+          <h1>
+            Change your<br />
+            Digital Experience
+          </h1>
+          <p>
+            Suspendisse sem neque, auctor a elementum ut,<br />
+            varius vel leo. Donec diam arcu, porta et magna at
+          </p>
+        </div>
+        <div class="images-container">
+          <div class="img-wrapper">
+            <img
+              onmouseover="showInfo(leeInfo)"
+              onmouseout="hideInfo(leeInfo)"
+              class="lee-stone-picture"
+              src="img/main/welcome/man-pic.png"
+              alt="Lee Stone Picture"
+            />
+            <div class="creator-container-wrapper">
+              <div data-lee-info class="creator-container lee-container">
+                <img
+                  class="creator-container__img"
+                  src="img/main/welcome/man-photo.png"
+                  alt="Lee Stone Photo"
+                />
+                <div class="creator-container__text">
+                  <h2>Lee Stone</h2>
+                  <p>Lee Stone</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-wrapper">
+            <img
+              onmouseover="showInfo(miaInfo)"
+              onmouseout="hideInfo(miaInfo)"
+              class="mia-potter-picture"
+              src="img/main/welcome/woman-pic.png"
+              alt="Mia Potter Picture"
+            />
+            <div class="creator-container-wrapper">
+              <div data-mia-info class="creator-container mia-container">
+                <img
+                  class="creator-container__img"
+                  src="img/main/welcome/woman-photo.png"
+                  alt="Mia Potter Picture"
+                />
+                <div class="creator-container__text">
+                  <h2>Mia Potter</h2>
+                  <p>Digital creator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
