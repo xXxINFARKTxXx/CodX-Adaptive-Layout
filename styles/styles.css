@@ -45,9 +45,10 @@ body {
   background-color: rgba(240, 242, 255, 0.604);
 }
 .header .logo-container {
-  width: 10%;
+  width: auto;
 }
 .header .logo-container .logo {
+  width: min(91px, 7vw);
   max-width: 15vh;
   min-height: 100%;
 }
@@ -137,16 +138,16 @@ body {
   color: rgb(130, 203, 172);
   font-style: normal;
   font-weight: 400;
-  font-size: min(13px, 2vh);
-  line-height: min(14px, 2vh);
-  letter-spacing: 0.48px;
+  font-size: min(13px, min(2vh, 2vw));
+  line-height: min(14px, min(2vh, 2vw));
+  letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
 }
 .main .welcome-container .title-container h1 {
-  font-size: min(64px, 8vh);
+  font-size: min(64px, min(8vh, 8vw));
   color: #2f2f2f;
 }
 .main .welcome-container .title-container p {
-  font-size: min(17px, 2vh);
+  font-size: min(17px, min(2vh, 2vw));
 }
 .main .welcome-container .images-container {
   width: 50%;
@@ -180,19 +181,18 @@ body {
 }
 .main .welcome-container .images-container .img-wrapper .creator-container-wrapper .creator-container {
   z-index: 3;
-  padding: 2vh;
+  padding: min(2vh, 15px);
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
   background-color: rgba(255, 255, 255, 0.8509803922);
-  opacity: 0.85;
-  border-radius: 30px;
+  border-radius: 5vh;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
   transition-duration: 0.5s;
-  width: min(12vw, 120px);
+  width: min(10vw, 140px);
   height: min(4vh, 50px);
 }
 .main .welcome-container .images-container .img-wrapper .creator-container-wrapper .creator-container__text {
@@ -200,17 +200,17 @@ body {
   margin-left: 1vh;
 }
 .main .welcome-container .images-container .img-wrapper .creator-container-wrapper .creator-container__text h2 {
-  font-size: min(2vh, 16px);
+  font-size: min(min(2vh, 2vw), 16px);
 }
 .main .welcome-container .images-container .img-wrapper .creator-container-wrapper .creator-container__text p {
-  font-size: min(1vh, 11px);
+  font-size: min(min(1vh, 1vw), 11px);
 }
 .main .welcome-container .images-container .img-wrapper .creator-container-wrapper .creator-container__img {
   width: min(3vw, 25px);
   height: min(3vw, 25px);
 }
 .main .welcome-container .images-container .img-wrapper .creator-container-wrapper .creator-container.lee-container {
-  bottom: min(40vh, 300px);
+  bottom: min(min(40vh, 20vw), 300px);
   right: 20%;
 }
 .main .welcome-container .images-container .img-wrapper .creator-container-wrapper .creator-container.mia-container {
@@ -289,12 +289,12 @@ body {
     flex-direction: row;
   }
   .main .welcome-container .images-container .img-wrapper .creator-container-wrapper .creator-container.lee-container {
-    bottom: min(25vh, 250px);
+    bottom: min(min(25vh, 25vw), 250px);
     right: -51%;
   }
   .main .welcome-container .images-container .img-wrapper .creator-container-wrapper .creator-container.mia-container {
-    bottom: min(25vh, 250px);
-    left: 8vh;
+    bottom: min(min(25vh, 25vw), 250px);
+    left: min(8vh, 8vw);
     width: 10vw;
   }
   .main .welcome-container .images-container .img-wrapper .mia-potter-picture {

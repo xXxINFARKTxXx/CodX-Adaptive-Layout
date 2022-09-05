@@ -83,14 +83,14 @@
         .img-wrapper
           .creator-container-wrapper
           .creator-container.lee-container {
-          bottom: min(25vh, 250px);
+          bottom: min(min(25vh, 25vw), 250px);
           right: -51%;
         }
 
         .img-wrapper {
           .creator-container-wrapper .creator-container.mia-container {
-            bottom: min(25vh, 250px);
-            left: 8vh;
+            bottom: min(min(25vh, 25vw), 250px);
+            left: min(8vh, 8vw);
             width: 10vw;
           }
 
