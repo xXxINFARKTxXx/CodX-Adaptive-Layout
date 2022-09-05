@@ -9,7 +9,7 @@
   justify-content: space-between;
 
   .title-container {
-    height: 100%;
+    margin-top: min(10vh, 100px);
     font-family: $MainFont;
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@
 
         .creator-container {
           z-index: 3;
-          padding: min(2vh, 15px);
+          padding: min(2vh, 5px);
           display: flex;
           flex-direction: row;
           align-items: center;

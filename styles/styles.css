@@ -126,7 +126,7 @@ body {
   justify-content: space-between;
 }
 .main .welcome-container .title-container {
-  height: 100%;
+  margin-top: min(10vh, 100px);
   font-family: "Outfit", sans-serif;
   display: flex;
   flex-direction: column;
@@ -181,7 +181,7 @@ body {
 }
 .main .welcome-container .images-container .img-wrapper .creator-container-wrapper .creator-container {
   z-index: 3;
-  padding: min(2vh, 15px);
+  padding: min(2vh, 5px);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -217,6 +217,42 @@ body {
   bottom: min(24vh, 120px);
   left: 20%;
 }
+.main .nft-slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: min(400px, min(50vh, 50vw));
+  display: flex;
+  width: min(100vw, 1440px);
+  height: min(20vw, 320px);
+  overflow: hidden;
+}
+.main .nft-slideshow .nft-pic {
+  width: 11.1111111111vw;
+  height: min(11.1111111111vw, 160px);
+  -webkit-animation: slide 10s linear infinite;
+          animation: slide 10s linear infinite;
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(min(11.1111111111vw, 160px) * -9), 0, 0);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(min(11.1111111111vw, 160px) * -9), 0, 0);
+  }
+}
+.main .nft-slideshow:hover .nft-pic {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
 
 @media (max-width: 440px) {
   .header {
@@ -227,7 +263,7 @@ body {
     position: fixed;
     top: 1px;
     right: 1px;
-    transform: translate(0, -50vw);
+    transform: translate(0, -100vw);
     width: 50px;
     flex-direction: column;
     align-items: center;
@@ -305,5 +341,8 @@ body {
   .main .welcome-container .images-container .img-wrapper .lee-stone-picture {
     width: 30vw;
     height: auto;
+  }
+  .main .nft-slideshow {
+    margin-top: auto;
   }
 }

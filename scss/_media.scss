@@ -7,7 +7,7 @@
     position: fixed;
     top: 1px;
     right: 1px;
-    transform: translate(0, -50vw);
+    transform: translate(0, -100vw);
     width: 50px;
     flex-direction: column;
     align-items: center;
@@ -95,16 +95,19 @@
           }
 
           .mia-potter-picture {
-            bottom: 0;// min(40px, 3vh);
+            bottom: 0; // min(40px, 3vh);
             width: 30vw;
             height: auto;
           }
-          .lee-stone-picture{
+          .lee-stone-picture {
             width: 30vw;
             height: auto;
           }
         }
       }
+    }
+    .nft-slideshow {
+    margin-top: auto;
     }
   }
 }
