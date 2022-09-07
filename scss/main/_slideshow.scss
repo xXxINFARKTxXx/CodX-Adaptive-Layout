@@ -1,0 +1,45 @@
+.slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  margin-top: calc(2*min(calc(100vw / 9), 160px));
+  width: min(100vw, 1440px);
+  height: min(calc(100vw / 9), 160px);
+  overflow: hidden;
+
+  .slideshow__img-container {
+    width: min(calc(100vw / 9), 160px);
+    height: min(calc(100vw / 9), 160px);
+    animation: slide 5s linear infinite;
+
+    .slideshow__img {
+      width: min(calc(100vw / 9), 160px);
+      height: min(calc(100vw / 9), 160px);
+    }
+    // заготовки на приближение при наведении мышью 
+    // &:hover .slideshow__img {
+    //   transform: scale(1.5)
+    //     translate(0, calc((-1) * min(calc(min(100vh, 100vw) / 5), 135px)));
+    //   transition-duration: 0.5s;
+    //   border-radius: min(1vh, 10px);
+    // }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(calc((min(calc(100vw / 9), 160px) * (-9))), 0, 0);
+    }
+  }
+  // заготовки на приближение при наведении мышью 
+  // &:hover .slideshow__img-container {
+  //   animation-play-state: paused;
+  // }
+
+}
+
+
+

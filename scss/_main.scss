@@ -7,6 +7,11 @@ $MainFont: "Outfit", sans-serif;
   align-items: center;
 
   @import "main/_welcome.scss";
-  @import "main/_nftSlideshow.scss";
+  @import "main/_slideshow.scss";
   @import "main/_introduction.scss";
+  @import "main/_ourWork.scss";
+  @import "main/_joinUs.scss";
+  @import "main/_collections.scss";
+  @import "main/_top.scss";
+  @import "main/_faq.scss";
 }
