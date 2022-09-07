@@ -5,13 +5,15 @@
   margin-top: min(400px, min(50vh, 50vw));
   display: flex;
   width: min(100vw, 1440px);
-  height: min(20vw, 320px);
+  height: min(18vw, 320px);
   overflow: hidden;
 
   .nft-pic {
+    z-index: 1;
     width: calc(100vw / 9);
     height: min(calc(100vw / 9), 160px);
-    animation: slide 10s linear infinite;
+    animation: slide 18s linear infinite;
+    transition-duration: 0.5s;
   }
 
   @keyframes slide {
@@ -24,21 +26,5 @@
   }
   &:hover .nft-pic {
     animation-play-state: paused;
-    // animation: enlarge 3s;
   }
-
-  // @keyframes enlarge {
-  //   from {
-  //     translate: scale(1);
-  //   }
-  //   // 1% {
-  //   //   translate: scale(2);
-  //   // }
-  //   // 99% {
-  //   //   translate: scale(2);
-  //   // }
-  //   to {
-  //     translate: scale(2);
-  //   }
-  // }
 }

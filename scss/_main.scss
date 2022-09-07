@@ -6,7 +6,7 @@ $MainFont: "Outfit", sans-serif;
   justify-content: center;
   align-items: center;
 
-  @import 'main/_welcome.scss';
-  @import 'main/nft-slideshow.scss';
-
+  @import "main/_welcome.scss";
+  @import "main/_nftSlideshow.scss";
+  @import "main/_introduction.scss";
 }

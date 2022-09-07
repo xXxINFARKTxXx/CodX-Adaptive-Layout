@@ -1,6 +1,6 @@
 @media (max-width: 440px) {
   .header {
-    z-index: 1;
+    z-index: 29;
     margin: 0;
     padding: 3px 45px 7px 31px;
     border-radius: 5px;
@@ -17,7 +17,7 @@
 
     .logo {
       width: 32px;
-      margin-left: -11px;
+      margin-left: min(-11px, -1vw);
     }
 
     .navbar {

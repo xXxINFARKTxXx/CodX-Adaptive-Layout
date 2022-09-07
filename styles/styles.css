@@ -71,6 +71,7 @@ body {
   min-width: 30px;
   font-family: "Outfit", sans-serif;
   font-size: clamp(6px, 0.8vw, 14px);
+  color: rgb(34, 34, 34);
 }
 .header .navbar .share {
   width: max(25%, 144px);
@@ -90,7 +91,7 @@ body {
 }
 
 .menu-btn {
-  z-index: 5;
+  z-index: 30;
   position: fixed;
   top: 1px;
   right: 1px;
@@ -224,14 +225,16 @@ body {
   margin-top: min(400px, min(50vh, 50vw));
   display: flex;
   width: min(100vw, 1440px);
-  height: min(20vw, 320px);
+  height: min(18vw, 320px);
   overflow: hidden;
 }
 .main .nft-slideshow .nft-pic {
+  z-index: 1;
   width: 11.1111111111vw;
   height: min(11.1111111111vw, 160px);
-  -webkit-animation: slide 10s linear infinite;
-          animation: slide 10s linear infinite;
+  -webkit-animation: slide 18s linear infinite;
+          animation: slide 18s linear infinite;
+  transition-duration: 0.5s;
 }
 @-webkit-keyframes slide {
   0% {
@@ -256,7 +259,7 @@ body {
 
 @media (max-width: 440px) {
   .header {
-    z-index: 1;
+    z-index: 29;
     margin: 0;
     padding: 3px 45px 7px 31px;
     border-radius: 5px;
@@ -273,7 +276,7 @@ body {
   }
   .header .logo {
     width: 32px;
-    margin-left: -11px;
+    margin-left: min(-11px, -1vw);
   }
   .header .navbar {
     width: 100%;

@@ -1,0 +1,31 @@
+$MainFont: "Outfit", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    cursor: pointer;
+    width: min(15vw, 144px);
+    height: 100%;
+    border-radius: 20px;
+    font-size: clamp(3px, 0.8vw, 13px);
+    font-family: $MainFont;
+    background-color: #2f2f2f;
+    color: #ffffff;
+  }
+  
+  .button:hover {
+    background-color: aqua;
+    color: #2f2f2f;
+  }
+  

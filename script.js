@@ -1,3 +1,4 @@
+// header beginning
 let button = document.querySelector(`[data-button]`);
 let header = document.querySelector(`[data-header]`);
 let miaInfo = document.querySelector(`[data-mia-info]`);
@@ -12,31 +13,47 @@ window.addEventListener(`resize`, () => {
     header.classList.toggle(`active`);
   }
 });
+// header ending
 
-const showInfo = function (node) {
+// welcome beginning
+function showInfo (node) {
   node.style.visibility = `visible`;
   node.style.opacity = `1`;
 };
 
-const hideInfo = function (node) {
+function hideInfo (node) {
   node.style.visibility = `invisible`;
   node.style.opacity = `0`;
 };
+// welcome ending
 
-let imgContainer = document.querySelector(".nft-slideshow");
+// nftSlideshow beginning 
+let imgContainer = document.querySelector(`.nft-slideshow`);
 const fragment = document.createDocumentFragment();
 
-for (let i = 0; i < 3; i++) {
-  for (let i = 1; i < 10; i++) {
-    let img = document.createElement("img");
-    img.src = `img/main/nft-slideshow/nft (${i}).png`;
-    img.classList.add("nft-pic");
-    fragment.appendChild(img);
-  }
-}
-
-const enscaleImg = function (node, power) {
-  node.style.transform = `scale(${power})`;
+const enscaleImg = function (i, j, power) {
+  document.getElementById(`${i}${j}`).style.transform = `scale(${power})`;
 };
 
-imgContainer.appendChild(fragment);
+for (let i = 0; i < 3; i++) {
+  for (let j = 1; j < 10; j++) {
+    let img = document.createElement(`img`);
+
+    img.src = `img/main/nft-slideshow/nft (${j}).png`;
+    img.classList.add(`nft-pic`);
+
+    // почему то работает только без "@keyframes slide", а почему непонятно
+    img.addEventListener(`mouseover`, () => {
+      img.style.transform = `scale(2)`;
+      img.style.zIndex = `2`;
+    });
+    img.addEventListener(`mouseout`, () => {
+      img.style.transform = `scale(1)`;
+      img.style.zIndex = `1`;
+    });
+
+    imgContainer.appendChild(img);
+  }
+}
+// nftSlideshow ending
+
