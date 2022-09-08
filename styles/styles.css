@@ -105,7 +105,8 @@ body {
   font-size: clamp(3px, 0.6vw, 13px);
   letter-spacing: -0.4px;
   border-radius: 5px;
-  color: #2f2f2f;
+  font-weight: bold;
+  color: #000000;
   background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
 }
@@ -303,7 +304,7 @@ body {
 }
 .main .member .member__menu .member__button {
   width: min(179px, 16%);
-  height: min(50px, 8vh);
+  height: min(50px, min(4vh, 4vw));
   font-size: clamp(5px, 1.2vw, 22px);
 }
 .main .member .member__menu .member__button.active {
@@ -355,6 +356,16 @@ body {
   text-align: left;
 }
 
+@media (max-width: 900px) {
+  .member .member__content {
+    flex-direction: column;
+    align-items: center;
+    gap: min(2vh, 2vw);
+  }
+  .member .member__content .member__details {
+    width: 100%;
+  }
+}
 @media (max-width: 620px) {
   .header {
     z-index: 29;
