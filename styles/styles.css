@@ -144,6 +144,7 @@ body {
 }
 .main .welcome .title-container h1 {
   font-size: min(64px, min(8vh, 8vw));
+  font-weight: 400;
   color: #2f2f2f;
 }
 .main .welcome .title-container p {
@@ -252,6 +253,106 @@ body {
   100% {
     transform: translate3d(calc(min(11.1111111111vw, 160px) * -9), 0, 0);
   }
+}
+.main .introduction {
+  margin: min(120px, 30vh) 5vw 0 5vw;
+  width: min(1140px, 84vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .introduction .introduction__title {
+  display: flex;
+  flex-direction: column;
+  gap: min(2vh, 25px);
+  align-items: center;
+  justify-content: center;
+}
+.main .introduction .introduction__title .introduction__main-title {
+  font-family: "Outfit", sans-serif;
+  font-size: min(64px, min(8vh, 8vw));
+  font-weight: 400;
+  line-height: min(64px, min(8vh, 8vw));
+  letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
+  text-align: center;
+}
+.main .introduction .introduction__title .introduction__sub-title {
+  width: 70%;
+  font-family: "Outfit", sans-serif;
+  font-size: min(17px, min(2vw, 2vh));
+  letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
+  line-height: min(17px, min(2vw, 2vh));
+  font-weight: 400;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-size: min(17px, min(2vh, 2vw));
+  font-weight: 400;
+  line-height: min(17px, min(2vh, 2vw));
+  letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
+  text-align: center;
+}
+.main .member {
+  width: 100%;
+  margin: min(120px, 30vh) 5vw 0 5vw;
+  width: min(1140px, 84vw);
+}
+.main .member .member__menu {
+  justify-content: space-between;
+  gap: max(7px, 2vw);
+}
+.main .member .member__menu .member__button {
+  width: min(179px, 16%);
+  height: min(50px, 8vh);
+  font-size: clamp(5px, 1.2vw, 22px);
+}
+.main .member .member__menu .member__button.active {
+  background-color: aqua;
+  color: #2f2f2f;
+}
+.main .member .member__content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: min(64px, 8vh);
+}
+.main .member .member__photo {
+  width: min(552px, min(69vh, 69vw));
+  height: min(395px, min(49vh, 49vw));
+}
+.main .member .member__details {
+  width: 50%;
+  display: none;
+}
+.main .member .member__details.active {
+  display: block;
+  color: rgb(128, 0, 255);
+}
+.main .member .member__job-title {
+  color: rgb(255, 127, 150);
+  font-family: "Outfit", sans-serif;
+  font-size: min(16px, min(2vw, 2vh));
+  letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
+  line-height: min(18px, min(2vw, 2vh));
+  font-weight: 400;
+  text-align: left;
+}
+.main .member .member__title {
+  color: rgb(47, 47, 47);
+  font-family: "Outfit", sans-serif;
+  font-size: min(36px, min(4vw, 4vh));
+  letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
+  line-height: min(36px, min(4vw, 4vh));
+  font-weight: 400;
+  text-align: left;
+}
+.main .member .member__description {
+  color: rgb(47, 47, 47);
+  font-family: "Outfit", sans-serif;
+  font-size: min(20px, min(3vw, 3vh));
+  letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
+  line-height: min(26px, min(4vw, 4vh));
+  font-weight: 400;
+  text-align: left;
 }
 
 @media (max-width: 620px) {

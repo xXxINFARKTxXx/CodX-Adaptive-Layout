@@ -117,25 +117,27 @@
       <section class="slideshow"></section>
       <section class="introduction">
         <div class="introduction__title">
-          <h2>Hey there, we are</h2>
-          <p>
+          <h2 class="introduction__main-title">Hey there, we are</h2>
+          <p class="introduction__sub-title">
             Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec
             diam arcu, porta et magna at
           </p>
         </div>
         <div class="member">
           <div class="member__menu">
-            <button class="button member__button">Jack</button>
-            <button class="button member__button">Suni</button>
-            <button class="button member__button">Colin</button>
+            <button id="JackBtn" class="button member__button active">Jack</button>
+            <button id="SuniBtn" class="button member__button">Suni</button>
+            <button id="ColinBtn" class="button member__button">Colin</button>
           </div>
           <div class="member__content">
-            <img src="" alt="" class="member__photo" />
-            <div class="member__details">
-              <div class="member__job-title">Digital Artist</div>
-              <h2 class="member__title">
-                Pellentesque blandit in quam rhoncus
-              </h2>
+            <img
+              src="img/main/introduction/jack.png"
+              alt="Member Picture"
+              class="member__photo"
+            />
+            <div id="JackDetails" class="member__details active">
+              <p class="member__job-title">Digital Artist</p>
+              <h2 class="member__title">JackDetails</h2>
               <p class="member__description">
                 Suspendisse ante mauris, volutpat congue sem ac, ultrices tempor
                 lorem. Nullam eget vehicula tellus, ac consectetur urna. Mauris
@@ -145,14 +147,9 @@
                 nisi nisl, rutrum ac diam et, semper commodo quam
               </p>
             </div>
-          </div>
-          <div class="member__content">
-            <img src="" alt="" class="member__photo" />
-            <div class="member__details">
-              <div class="member__job-title">Digital Artist</div>
-              <h2 class="member__title">
-                Pellentesque blandit in quam rhoncus
-              </h2>
+            <div id="SuniDetails" class="member__details">
+              <p class="member__job-title">Digital Artist</p>
+              <h2 class="member__title">SuniDetails</h2>
               <p class="member__description">
                 Suspendisse ante mauris, volutpat congue sem ac, ultrices tempor
                 lorem. Nullam eget vehicula tellus, ac consectetur urna. Mauris
@@ -162,14 +159,9 @@
                 nisi nisl, rutrum ac diam et, semper commodo quam
               </p>
             </div>
-          </div>
-          <div class="member__content">
-            <img src="" alt="" class="member__photo" />
-            <div class="member__details">
-              <div class="member__job-title">Digital Artist</div>
-              <h2 class="member__title">
-                Pellentesque blandit in quam rhoncus
-              </h2>
+            <div id="ColinDetails" class="member__details">
+              <p class="member__job-title">Digital Artist</p>
+              <h2 class="member__title">ColinDetails</h2>
               <p class="member__description">
                 Suspendisse ante mauris, volutpat congue sem ac, ultrices tempor
                 lorem. Nullam eget vehicula tellus, ac consectetur urna. Mauris
@@ -440,25 +432,43 @@
           <img src="" alt="" class="logo footer__logo" />
           <p class="footer__join-title">Join the community</p>
           <div class="social-networks footer__scl-ntws">
-            <a class="footer__scl-ntwk-ref" href="#"><img src="" alt="" class="social-networks__img" /></a>
-            <a class="footer__scl-ntwk-ref" href="#"><img src="" alt="" class="social-networks__img" /></a>
-            <a class="footer__scl-ntwk-ref" href="#"><img src="" alt="" class="social-networks__img" /></a>
+            <a class="footer__scl-ntwk-ref" href="#"
+              ><img src="" alt="" class="social-networks__img"
+            /></a>
+            <a class="footer__scl-ntwk-ref" href="#"
+              ><img src="" alt="" class="social-networks__img"
+            /></a>
+            <a class="footer__scl-ntwk-ref" href="#"
+              ><img src="" alt="" class="social-networks__img"
+            /></a>
           </div>
         </div>
         <div class="footer__content-column footer__site">
           <h3 class="footer__site-title">Site</h3>
           <ul class="footer___items-list">
-            <li class="footer__list-item"><a href="#" class="footer__list-ref">About us</a></li>
-            <li class="footer__list-item"><a href="#" class="footer__list-ref">NFTs</a></li>
-            <li class="footer__list-item"><a href="#" class="footer__list-ref">Contact</a></li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-ref">About us</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-ref">NFTs</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-ref">Contact</a>
+            </li>
           </ul>
         </div>
         <div class="footer__content-column footer__utility">
           <h3 class="footer__utility-title">Site</h3>
           <ul class="footer___items-list">
-            <li class="footer__list-item"><a href="#" class="footer__list-ref">Style guide</a></li>
-            <li class="footer__list-item"><a href="#" class="footer__list-ref">Lincensing</a></li>
-            <li class="footer__list-item"><a href="#" class="footer__list-ref">404</a></li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-ref">Style guide</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-ref">Lincensing</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-ref">404</a>
+            </li>
           </ul>
         </div>
         <div class="footer__content-column footer__stay-in">
@@ -468,7 +478,7 @@
             diam arcu, porta et magna at
           </p>
           <div class="footer__email-container">
-            <input action="submit" class="footer__email"></input>
+            <input action="submit" class="footer__email" />
             <button class="button footer__sign-up-button">Sign up</button>
           </div>
         </div>
@@ -476,9 +486,7 @@
       <div class="footer__copiright">
         <p class="footer__rights">© 2022 All rights reserved.</p>
         <p class="footer__authors">
-          Created By <a class="footer__author">Udesly
-            
-          </a> Powered By
+          Created By <a class="footer__author">Udesly </a> Powered By
           <a class="footer__author">Webflow</a>
         </p>
       </div>

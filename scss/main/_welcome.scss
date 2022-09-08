@@ -22,16 +22,17 @@
       font-weight: 400;
       font-size: min(13px, min(2vh, 2vw));
       line-height: min(14px, min(2vh, 2vw));
-      letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
+      letter-spacing: $GlobalLetterSpacing;
     }
 
     h1 {
-      font-size: min(64px, min(8vh, 8vw));
+      font-size: $GlobalTitle;
+      font-weight: 400;
       color: #2f2f2f;
     }
 
     p {
-      font-size: min(17px, min(2vh, 2vw));
+      font-size: $SubTitle;
     }
   }
 

@@ -1,8 +1,8 @@
 // header beginning
-let button = document.querySelector(`[data-button]`);
-let header = document.querySelector(`[data-header]`);
-let miaInfo = document.querySelector(`[data-mia-info]`);
-let leeInfo = document.querySelector(`[data-lee-info]`);
+const button = document.querySelector(`[data-button]`);
+const header = document.querySelector(`[data-header]`);
+const miaInfo = document.querySelector(`[data-mia-info]`);
+const leeInfo = document.querySelector(`[data-lee-info]`);
 
 button.addEventListener(`click`, () => {
   header.classList.toggle(`active`);
@@ -16,24 +16,25 @@ window.addEventListener(`resize`, () => {
 // header ending
 
 // welcome beginning
-function showInfo (node) {
+function showInfo(node) {
   node.style.visibility = `visible`;
   node.style.opacity = `1`;
-};
+}
 
-function hideInfo (node) {
+function hideInfo(node) {
   node.style.visibility = `invisible`;
   node.style.opacity = `0`;
-};
+}
 // welcome ending
 
-// nftSlideshow beginning 
-let slideshow = document.querySelector(`.slideshow`);
+// nftSlideshow beginning
+const slideshow = document.querySelector(`.slideshow`);
 const fragment = document.createDocumentFragment();
 
-const enscaleImg = function (i, j, power) {
-  document.getElementById(`${i}${j}`).style.transform = `scale(${power})`;
-};
+// см файл __slideshow.scss этот кусок кода для анимации при наведении мышкой на картинку
+// const enscaleImg = function (i, j, power) {
+//   document.getElementById(`${i}${j}`).style.transform = `scale(${power})`;
+// };
 
 for (let i = 0; i < 3; i++) {
   for (let j = 1; j < 10; j++) {
@@ -51,5 +52,33 @@ for (let i = 0; i < 3; i++) {
 }
 // nftSlideshow ending
 
+// introduction beginning
+class Member {
+  static activeMember;
+  static activeMemberImage = document.getElementsByClassName(`member__photo`)[0];
+  
+  constructor(name) {
+    this.btn = document.getElementById(`${name}Btn`);
+    this.details = document.getElementById(`${name}Details`);
+    this.picSrc = `img/main/introduction/${name}.png`;
+    this.name = name;
+    this.btn.addEventListener(`click`, () => Member.switchActiveTo(this));
+  }
+  
+  static switchActiveTo(member) {
+    member.btn.classList.toggle(`active`);
+    member.details.classList.toggle(`active`);
+    Member.activeMemberImage.src = member.picSrc;
+    Member.activeMember.btn.classList.toggle(`active`);
+    Member.activeMember.details.classList.toggle(`active`);
+    Member.activeMember = member;
+  }
+}
 
+const memberNames = [`Jack`, `Suni`, `Colin`];
+const memberList = [];
 
+memberNames.forEach((el) => memberList.push(new Member(el)));
+Member.activeMember = memberList[0];
+
+// introduction ending
