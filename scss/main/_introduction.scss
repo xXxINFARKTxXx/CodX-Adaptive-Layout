@@ -1,0 +1,83 @@
+.introduction {
+  margin: min(120px, 30vh) 5vw 0 5vw;
+  width: min(1140px, 84vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .introduction__title {
+    display: flex;
+    flex-direction: column;
+    gap: min(2vh, 25px);
+    align-items: center;
+    justify-content: center;
+
+    .introduction__main-title {
+      font-family: $MainFont;
+      font-size: $GlobalTitle;
+      font-weight: 400;
+      line-height: $GlobalTitle;
+      letter-spacing: $GlobalLetterSpacing;
+      text-align: center;
+    }
+    .introduction__sub-title {
+      width: 70%;
+      @include typography(17px, 2vw, 2vh, 17px, 2vw, 2vh, center);
+      font-family: $MainFont;
+      font-size: $SubTitle;
+      font-weight: 400;
+      line-height: $SubTitle;
+      letter-spacing: $GlobalLetterSpacing;
+      text-align: center;
+    }
+  }
+}
+
+.member {
+  width: 100%;
+  margin: min(120px, 30vh) 5vw 0 5vw;
+  width: min(1140px, 84vw);
+  .member__menu {
+    justify-content: space-between;
+    gap: max(7px, 2vw);
+    .member__button {
+      width: min(179px, 16%);
+      height: min(50px, 8vh);
+      font-size: clamp(5px, 1.2vw, 22px);
+    }
+    .member__button.active {
+      background-color: aqua;
+      color: #2f2f2f;
+    }
+  }
+  .member__content {
+    display: flex;
+    align-items: flex-start;
+    margin-top: min(64px, 8vh);
+  }
+  .member__photo {
+    width: min(552px, min(69vh, 69vw));
+    height: min(395px, min(49vh, 49vw));
+  }
+  .member__details {
+    width: 50%;
+    display: none;
+  }
+  .member__details.active {
+    display: block;
+    color: rgb(128, 0, 255);
+  }
+  .member__job-title {
+    color: rgba(255, 127, 150, 1);
+    @include typography(16px, 2vw, 2vh, 18px, 2vw, 2vh, left);
+  }
+  .member__title {
+    color: rgba(47, 47, 47, 1);
+    @include typography(36px, 4vw, 4vh, 36px, 4vw, 4vh, left);
+  }
+  .member__description {
+    color: rgba(47, 47, 47, 1);
+    @include typography(20px, 3vw, 3vh, 26px, 4vw, 4vh, left);
+  }
+}
