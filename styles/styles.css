@@ -281,9 +281,9 @@ body {
 .main .introduction .introduction__title .introduction__sub-title {
   width: 70%;
   font-family: "Outfit", sans-serif;
-  font-size: min(17px, min(2vw, 2vh));
+  font-size: min(17px, min(1.7vw, 1.7vh));
   letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
-  line-height: min(17px, min(2vw, 2vh));
+  line-height: min(17px, min(1.7vw, 1.7vh));
   font-weight: 400;
   text-align: center;
   font-family: "Outfit", sans-serif;
@@ -296,7 +296,7 @@ body {
 .main .member {
   width: 100%;
   margin: min(120px, 30vh) 5vw 0 5vw;
-  width: min(1140px, 84vw);
+  width: min(1104px, 84vw);
 }
 .main .member .member__menu {
   justify-content: space-between;
@@ -313,7 +313,7 @@ body {
 }
 .main .member .member__content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-top: min(64px, 8vh);
 }
 .main .member .member__photo {
@@ -331,41 +331,86 @@ body {
 .main .member .member__job-title {
   color: rgb(255, 127, 150);
   font-family: "Outfit", sans-serif;
-  font-size: min(16px, min(2vw, 2vh));
+  font-size: min(16px, min(1.6vw, 1.6vh));
   letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
-  line-height: min(18px, min(2vw, 2vh));
+  line-height: min(18px, min(1.8vw, 1.8vh));
   font-weight: 400;
   text-align: left;
 }
 .main .member .member__title {
   color: rgb(47, 47, 47);
   font-family: "Outfit", sans-serif;
-  font-size: min(36px, min(4vw, 4vh));
+  font-size: min(36px, min(3.6vw, 3.6vh));
   letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
-  line-height: min(36px, min(4vw, 4vh));
+  line-height: min(36px, min(3.6vw, 3.6vh));
   font-weight: 400;
   text-align: left;
 }
 .main .member .member__description {
   color: rgb(47, 47, 47);
   font-family: "Outfit", sans-serif;
-  font-size: min(20px, min(3vw, 3vh));
+  font-size: min(20px, min(2vw, 2vh));
   letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
-  line-height: min(26px, min(4vw, 4vh));
+  line-height: min(26px, min(2.6vw, 2.6vh));
   font-weight: 400;
   text-align: left;
 }
-
-@media (max-width: 900px) {
-  .member .member__content {
-    flex-direction: column;
-    align-items: center;
-    gap: min(2vh, 2vw);
-  }
-  .member .member__content .member__details {
-    width: 100%;
-  }
+.main .our-work {
+  margin: min(146px, 14.6vh) 3vw 0 3vw;
+  width: min(1200px, 94vw);
+  height: min(450px, min(45vh, 45vw));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+.main .our-work .our-work__photo {
+  margin-right: min(15px, min(1.5vw, 1.5vh));
+  width: min(585px, min(58.5vh, 58.5vw));
+  height: min(450px, min(45vh, 45vw));
+}
+.main .our-work .our-work__details {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: min(57px, min(5.7vw, 5.7vh)) 0px 0px min(48px, min(4.8vh, 4.8vw));
+  width: min(600px, min(60vh, 60vw));
+  height: min(450px, min(45vh, 45vw));
+}
+.main .our-work .our-work__details .our-work__title {
+  font-family: "Outfit", sans-serif;
+  font-size: min(35px, min(3.5vw, 3.5vh));
+  letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
+  line-height: min(36px, min(3.6vw, 3.6vh));
+  font-weight: 400;
+  text-align: 0.48px;
+}
+.main .our-work .our-work__details .our-work__post-title {
+  margin-top: min(7px, min(0.7vh, 0.7vw));
+  font-family: "Outfit", sans-serif;
+  font-size: min(48px, min(4.8vw, 4.8vh));
+  letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
+  line-height: min(48px, min(4.8vw, 4.8vh));
+  font-weight: 400;
+  text-align: 0.48px;
+}
+.main .our-work .our-work__details .our-work__description {
+  margin-top: min(38px, min(3.8vh, 3.8vw));
+  font-family: "Outfit", sans-serif;
+  font-size: min(18px, min(1.8vw, 1.8vh));
+  letter-spacing: min(0.48px, min(0.5vh, 0.5vw));
+  line-height: min(26px, min(2.6vw, 2.6vh));
+  font-weight: 400;
+  text-align: 0.48px;
+}
+.main .our-work .our-work__details .our-work__about-btn {
+  margin-top: min(32px, min(3.2vh, 3.2vw));
+  border-radius: 0px;
+  width: min(166px, min(16.6vw, 16.6vh));
+  height: min(44px, min(4.4vw, 4.4vh));
+  align-self: flex-end;
+}
+
 @media (max-width: 620px) {
   .header {
     z-index: 29;
@@ -453,5 +498,19 @@ body {
   .main .welcome .images-container .img-wrapper .lee-stone-picture {
     width: 30vw;
     height: auto;
+  }
+}
+@media (max-width: 420px) {
+  .member .member__content {
+    flex-direction: column;
+    align-items: center;
+    gap: min(2vh, 2vw);
+  }
+  .member .member__content .member__details {
+    align-self: center;
+    width: 80%;
+  }
+  .member .member__content .member__photo {
+    align-self: center;
   }
 }

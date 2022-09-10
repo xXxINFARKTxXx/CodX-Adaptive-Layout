@@ -1,0 +1,43 @@
+.our-work {
+  margin: min(146px, 14.6vh) 3vw 0 3vw;
+  width: min(1200px, 94vw);
+  height: min(450px, min(45vh, 45vw));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .our-work__photo {
+    margin-right: min(15px, min(1.5vw, 1.5vh));
+    width: min(585px, min(58.5vh, 58.5vw));
+    height: min(450px, min(45vh, 45vw));
+  }
+
+  .our-work__details {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: min(57px, min(5.7vw, 5.7vh)) 0px 0px min(48px, min(4.8vh, 4.8vw));
+    width: min(600px, min(60vh, 60vw));
+    height: min(450px, min(45vh, 45vw));
+
+    .our-work__title {
+      @include typography(35px, 36px, 0.48px);
+    }
+    .our-work__post-title {
+      margin-top: min(7px, min(0.7vh, 0.7vw));
+      @include typography(48px, 48px, 0.48px);
+    }
+    .our-work__description {
+      margin-top: min(38px, min(3.8vh, 3.8vw));
+      @include typography(18px, 26px, 0.48px);
+    }
+    .our-work__about-btn {
+      margin-top: min(32px, min(3.2vh, 3.2vw));
+      border-radius: 0px;
+      width: min(166px, min(16.6vw, 16.6vh));
+      height: min(44px, min(4.4vw, 4.4vh));
+      align-self: flex-end;
+    }
+  }
+}

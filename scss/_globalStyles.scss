@@ -6,17 +6,13 @@ $GlobalFontweight: 400;
 
 @mixin typography(
   $fz,
-  $VwFontValue,
-  $VhFontValue,
   $lh,
-  $VwLineValue,
-  $VhLineValue,
   $textAlign
 ) {
   font-family: $MainFont;
-  font-size: min($fz, min($VwFontValue, $VhFontValue));
+  font-size: min($fz, min(calc(calc($fz/10px)*1vw), calc(calc($fz/10px)*1vh)));
   letter-spacing: $GlobalLetterSpacing;
-  line-height: min($lh, min($VwLineValue, $VhLineValue));
+  line-height: min($lh, min(calc(calc($lh/10px)*1vw), calc(calc($lh/10px)*1vh)));
   font-weight: $GlobalFontweight;
   text-align: $textAlign;
 }
