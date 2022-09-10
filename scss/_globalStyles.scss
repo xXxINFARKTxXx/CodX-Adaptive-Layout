@@ -1,7 +1,7 @@
 $MainFont: "Outfit", sans-serif;
 $GlobalTitle: min(64px, min(8vh, 8vw));
 $SubTitle: min(17px, min(2vh, 2vw));
-$GlobalLetterSpacing: min(0.48px, min(0.5vh, 0.5vw));
+$GlobalLetterSpacing: min(0.48px, min(0.048vh, 0.048vw));
 $GlobalFontweight: 400;
 
 @mixin typography(
@@ -10,13 +10,23 @@ $GlobalFontweight: 400;
   $textAlign
 ) {
   font-family: $MainFont;
-  font-size: min($fz, min(calc(calc($fz/10px)*1vw), calc(calc($fz/10px)*1vh)));
+  font-size: min($fz, min($fz/10px*1vw, $fz/10px*1vh));
   letter-spacing: $GlobalLetterSpacing;
-  line-height: min($lh, min(calc(calc($lh/10px)*1vw), calc(calc($lh/10px)*1vh)));
+  line-height: min($lh, min($lh/10px*1vw, $lh/10px*1vh));
   font-weight: $GlobalFontweight;
   text-align: $textAlign;
 }
 
+@mixin  AdaptW ($Wpx){
+  width: min($Wpx, min($Wpx/10px*1vw, $Wpx/10px*1vh));
+}
+@mixin AdaptH ($Hpx) {
+  height: min($Hpx, min($Hpx/10px*1vw, $Hpx/10px*1vh));
+}
+
+@function adaptPx ($px){
+  @return min($px, min($px/10px*1vw, $px/10px*1vh))
+}
 
 * {
   margin: 0;

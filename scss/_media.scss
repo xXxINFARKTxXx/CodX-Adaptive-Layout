@@ -1,4 +1,3 @@
-
 @media (max-width: 620px) {
   .header {
     z-index: 29;
@@ -107,23 +106,96 @@
         }
       }
     }
-  }
-}
+    
+    .introduction {
+      .member {
+        margin-top: 5vh;
+        .member__content {
+          flex-direction: column;
+          align-items: center;
+          gap: min(2vh, 2vw);
 
-@media (max-width:420px) {
-    .member {
-    .member__content {
-      flex-direction: column;
-      align-items: center;
-      gap: min(2vh, 2vw);
-
-      .member__details{
-        align-self: center;
-        width: 80%;
+          .member__details {
+            align-self: center;
+            width: 80%;
+          }
+          .member__photo {
+            align-self: center;
+          }
+        }
       }
-      .member__photo{
-        align-self: center;
+    }
+    .our-work {
+      margin-top: min(30vw, 30vh);
+      flex-direction: column;
+      .our-work__photo {
+        margin-right: 0;
+      }
+      .our-work__details {
+        padding-left: 0%;
+      }
+    }
+
+    .purposes {
+      align-items: center;
+      margin-top: adaptPx(350px);
+      flex-direction: column;
+
+      .purposes__photo {
+        @include AdaptW(calc(552px / 1.5));
+        @include AdaptH(calc(596px / 1.5));
+      }
+
+      .purposes-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+        gap: adaptPx(10px);
+
+        .purposes-list__item {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: adaptPx(32px);
+
+          .purposes-list__item-number {
+            align-self: center;
+            box-sizing: border-box;
+            display: block;
+            @include AdaptW(57px);
+            @include AdaptH(35px);
+            padding: adaptPx(8px);
+            margin-bottom: adaptPx(8px);
+            border-radius: adaptPx(30px);
+            @include typography(16px, 18px, center);
+
+            &.green {
+              background-color: rgba(130, 203, 172, 1);
+            }
+            &.red {
+              background-color: rgba(255, 127, 150, 1);
+            }
+            &.yellow {
+              background-color: rgba(234, 215, 27, 1);
+            }
+          }
+
+          .purposes-list__item-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            height: adaptPx(80px);
+            @include typography(35px, 36px, center);
+            font-weight: 700;
+          }
+
+          .purposes-list__item-details {
+            @include typography(18px, 26px, center);
+          }
+        }
       }
     }
   }
 }
+

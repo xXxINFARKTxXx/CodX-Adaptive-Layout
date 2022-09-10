@@ -1,5 +1,5 @@
 .our-work {
-  margin: min(146px, 14.6vh) 3vw 0 3vw;
+  margin-top: min(146px, min(14.6vw, 14.6vh));
   width: min(1200px, 94vw);
   height: min(450px, min(45vh, 45vw));
   display: flex;
@@ -35,9 +35,11 @@
     .our-work__about-btn {
       margin-top: min(32px, min(3.2vh, 3.2vw));
       border-radius: 0px;
+      border-width: min(0.15vh, 5px);
       width: min(166px, min(16.6vw, 16.6vh));
       height: min(44px, min(4.4vw, 4.4vh));
       align-self: flex-end;
+      @include typography(15px, 16px, center);
     }
   }
 }
