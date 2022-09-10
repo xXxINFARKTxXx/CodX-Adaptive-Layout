@@ -54,6 +54,7 @@
   .member__content {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: min(64px, 8vh);
   }
   .member__photo {
@@ -61,7 +62,7 @@
     height: min(395px, min(49vh, 49vw));
   }
   .member__details {
-    width: 50%;
+    width: min(552px, min(55.2vw, 55.2vh));
     display: none;
   }
   .member__details.active {

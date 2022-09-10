@@ -314,6 +314,7 @@ body {
 .main .member .member__content {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: min(64px, 8vh);
 }
 .main .member .member__photo {
@@ -321,7 +322,7 @@ body {
   height: min(395px, min(49vh, 49vw));
 }
 .main .member .member__details {
-  width: 50%;
+  width: min(552px, min(55.2vw, 55.2vh));
   display: none;
 }
 .main .member .member__details.active {
@@ -366,7 +367,7 @@ body {
 }
 .main .our-work .our-work__photo {
   margin-right: min(15px, min(1.5vw, 1.5vh));
-  width: min(585px, min(58.5vh, 58.5vw));
+  width: min(585px, min(63.5vh, 63.5vw));
   height: min(450px, min(45vh, 45vw));
 }
 .main .our-work .our-work__details {
@@ -374,7 +375,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   padding: min(57px, min(5.7vw, 5.7vh)) 0px 0px min(48px, min(4.8vh, 4.8vw));
-  width: min(600px, min(60vh, 60vw));
+  width: min(600px, min(70vh, 70vw));
   height: min(450px, min(45vh, 45vw));
 }
 .main .our-work .our-work__details .our-work__title {
