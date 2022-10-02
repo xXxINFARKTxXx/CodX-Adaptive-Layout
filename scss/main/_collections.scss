@@ -1,0 +1,65 @@
+.collections {
+    width: min(adaptPx(1200px), 94vw);
+    margin-top: adaptPx(100px);
+    display: flex;
+    flex-direction: column;
+    
+    &__title {
+        @include typography(64px, 64px, center);
+    }
+    &__grid {
+        margin-top: adaptPx(73px);
+        display: grid;
+        justify-items: center;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: adaptPx(63px);
+        grid-row-gap: adaptPx(30px);
+        width: min(adaptPx(1200px), 94vw);
+    }
+
+    .collection-card {
+        box-sizing: border-box;
+        border: adaptPx(2.5px) solid black;
+        border-radius: adaptPx(29.5px);
+        width: min(358px, min(30vw, 30vh));
+        transition-duration: 0.5s;
+        overflow: hidden;
+        
+        &__picture {
+            position: relative;
+            width: min(358px, min(30vw, 30vh));
+
+            height: auto;
+        }
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: adaptPx(92px);
+            width: min(358px, min(30vw, 30vh));
+            @include typography(26px, 26px, center);
+            font-weight: 700;
+           
+        }
+        &:hover{
+            border-color: rgb(255, 113, 47);
+            .collection-card__title
+            {
+                color: rgb(255, 113, 47);
+
+            }
+            
+        }
+    }
+
+    &__button {
+        margin-top: adaptPx(64px);
+        width: adaptPx(134px);
+        height: adaptPx(44px);
+        border-radius: 0px;
+        box-sizing: border-box;
+        align-self: center;
+    }
+
+}

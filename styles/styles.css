@@ -429,25 +429,24 @@ body {
   flex-direction: row-reverse;
   justify-content: center;
   box-sizing: border-box;
-  margin-top: min(84px, min(8.4vw, 8.4vh));
+  margin-top: min(84px, min(10.5vw, 10.5vh));
   margin-left: 3vw;
   margin-right: 3vw;
-  margin-bottom: 100px;
   width: min(1200px, 94vw);
-  height: min(596px, min(59.6vw, 59.6vh));
+  height: min(596px, min(74.5vw, 74.5vh));
 }
 .main .purposes .purposes__photo {
   align-self: center;
-  width: min(552px, min(55.2vw, 55.2vh));
-  height: min(596px, min(59.6vw, 59.6vh));
+  width: min(552px, min(69vw, 69vh));
+  height: min(596px, min(74.5vw, 74.5vh));
 }
 .main .purposes .purposes-list {
-  width: min(552px, min(55.2vw, 55.2vh));
-  height: min(615px, min(61.5vw, 61.5vh));
-  margin-top: min(30px, min(3vw, 3vh));
-  margin-right: min(55px, min(5.5vw, 5.5vh));
-  margin-bottom: min(55px, min(5.5vw, 5.5vh));
-  margin-left: min(55px, min(5.5vw, 5.5vh));
+  width: min(552px, min(69vw, 69vh));
+  height: min(615px, min(76.875vw, 76.875vh));
+  margin-top: min(30px, min(3.75vw, 3.75vh));
+  margin-right: min(55px, min(6.875vw, 6.875vh));
+  margin-bottom: min(55px, min(6.875vw, 6.875vh));
+  margin-left: min(55px, min(6.875vw, 6.875vh));
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -455,16 +454,16 @@ body {
   list-style: none;
 }
 .main .purposes .purposes-list .purposes-list__item {
-  margin-bottom: min(32px, min(3.2vw, 3.2vh));
+  margin-bottom: min(32px, min(4vw, 4vh));
 }
 .main .purposes .purposes-list .purposes-list__item .purposes-list__item-number {
   box-sizing: border-box;
   display: block;
-  width: min(57px, min(5.7vw, 5.7vh));
-  height: min(35px, min(3.5vw, 3.5vh));
-  padding: min(8px, min(0.8vw, 0.8vh));
-  margin-bottom: min(8px, min(0.8vw, 0.8vh));
-  border-radius: min(30px, min(3vw, 3vh));
+  width: min(57px, min(7.125vw, 7.125vh));
+  height: min(35px, min(4.375vw, 4.375vh));
+  padding: min(8px, min(1vw, 1vh));
+  margin-bottom: min(8px, min(1vw, 1vh));
+  border-radius: min(30px, min(3.75vw, 3.75vh));
   font-family: "Outfit", sans-serif;
   font-size: min(16px, min(1.6vw, 1.6vh));
   letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
@@ -482,7 +481,7 @@ body {
   background-color: rgb(234, 215, 27);
 }
 .main .purposes .purposes-list .purposes-list__item .purposes-list__item-title {
-  margin-bottom: min(13px, min(1.3vw, 1.3vh));
+  margin-bottom: min(13px, min(1.625vw, 1.625vh));
   font-family: "Outfit", sans-serif;
   font-size: min(35px, min(3.5vw, 3.5vh));
   letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
@@ -499,7 +498,185 @@ body {
   font-weight: 400;
   text-align: left;
 }
-
+.main .join-us {
+  margin-top: min(220px, min(27.5vw, 27.5vh));
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: min(1440px, 140vw);
+  background-color: rgb(130, 203, 172);
+}
+.main .join-us .join-us__img-wrap {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-image: url("../../img/main/join-us.png");
+  position: relative;
+  width: min(1440px, 140vw);
+  height: min(min(100vh, 510px), 50vw);
+}
+.main .join-us .join-us__text {
+  width: min(1140px, 94vw);
+  padding-top: min(80px, min(10vw, 10vh));
+  height: min(0px, min(0vw, 0vh));
+  align-self: center;
+}
+.main .join-us .join-us__text .join-us__title {
+  width: min(657px, min(82.125vw, 82.125vh));
+  font-family: "Outfit", sans-serif;
+  font-size: min(64px, min(6.4vw, 6.4vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(64px, min(6.4vw, 6.4vh));
+  font-weight: 400;
+  text-align: left;
+}
+.main .join-us .join-us__text .join-us__subtitle {
+  width: min(552px, min(69vw, 69vh));
+  font-family: "Outfit", sans-serif;
+  font-size: min(20px, min(2vw, 2vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(26px, min(2.6vw, 2.6vh));
+  font-weight: 400;
+  text-align: left;
+}
+.main .collections {
+  width: min(min(1200px, min(150vw, 150vh)), 94vw);
+  margin-top: min(100px, min(12.5vw, 12.5vh));
+  display: flex;
+  flex-direction: column;
+}
+.main .collections__title {
+  font-family: "Outfit", sans-serif;
+  font-size: min(64px, min(6.4vw, 6.4vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(64px, min(6.4vw, 6.4vh));
+  font-weight: 400;
+  text-align: center;
+}
+.main .collections__grid {
+  margin-top: min(73px, min(9.125vw, 9.125vh));
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: min(63px, min(7.875vw, 7.875vh));
+  grid-row-gap: min(30px, min(3.75vw, 3.75vh));
+  width: min(min(1200px, min(150vw, 150vh)), 94vw);
+}
+.main .collections .collection-card {
+  box-sizing: border-box;
+  border: min(2.5px, min(0.3125vw, 0.3125vh)) solid black;
+  border-radius: min(29.5px, min(3.6875vw, 3.6875vh));
+  width: min(358px, min(30vw, 30vh));
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+.main .collections .collection-card__picture {
+  position: relative;
+  width: min(358px, min(30vw, 30vh));
+  height: auto;
+}
+.main .collections .collection-card__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: min(92px, min(11.5vw, 11.5vh));
+  width: min(358px, min(30vw, 30vh));
+  font-family: "Outfit", sans-serif;
+  font-size: min(26px, min(2.6vw, 2.6vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(26px, min(2.6vw, 2.6vh));
+  font-weight: 400;
+  text-align: center;
+  font-weight: 700;
+}
+.main .collections .collection-card:hover {
+  border-color: rgb(255, 113, 47);
+}
+.main .collections .collection-card:hover .collection-card__title {
+  color: rgb(255, 113, 47);
+}
+.main .collections__button {
+  margin-top: min(64px, min(8vw, 8vh));
+  width: min(134px, min(16.75vw, 16.75vh));
+  height: min(44px, min(5.5vw, 5.5vh));
+  border-radius: 0px;
+  box-sizing: border-box;
+  align-self: center;
+}
+.main .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: min(95px, min(11.875vw, 11.875vh));
+  width: min(1200px, min(150vw, 150vh));
+}
+.main .top__title {
+  font-family: "Outfit", sans-serif;
+  font-size: min(64px, min(6.4vw, 6.4vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(64px, min(6.4vw, 6.4vh));
+  font-weight: 400;
+  text-align: center;
+}
+.main .top__grid {
+  margin-top: min(25px, min(3.125vw, 3.125vh));
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: min(38px, min(4.75vw, 4.75vh));
+  grid-row-gap: min(38px, min(4.75vw, 4.75vh));
+}
+.main .top__button {
+  margin-top: min(64px, min(8vw, 8vh));
+  width: min(134px, min(16.75vw, 16.75vh));
+  height: min(44px, min(5.5vw, 5.5vh));
+  border-radius: 0px;
+  box-sizing: border-box;
+  align-self: center;
+}
+.main .nft-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.main .nft-card__pic {
+  width: min(332px, min(41.5vw, 41.5vh));
+}
+.main .nft-card__info {
+  width: 70%;
+  margin: 5% 9.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.main .nft-card__name {
+  width: 65%;
+  font-family: "Outfit", sans-serif;
+  font-size: min(20px, min(2vw, 2vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(18px, min(1.8vw, 1.8vh));
+  font-weight: 400;
+  text-align: left;
+}
+.main .nft-card__number {
+  font-family: "Outfit", sans-serif;
+  font-size: min(20px, min(2vw, 2vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(18px, min(1.8vw, 1.8vh));
+  font-weight: 400;
+  text-align: left;
+  width: 700;
+}
+.main .nft-card__number::before {
+  content: "#";
+}
+@media (max-width: 750px) {
+  .main .collections__grid {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media (max-width: 620px) {
   .header {
     z-index: 29;
@@ -615,34 +792,34 @@ body {
   }
   .main .purposes {
     align-items: center;
-    margin-top: min(350px, min(35vw, 35vh));
+    margin-top: min(350px, min(43.75vw, 43.75vh));
     flex-direction: column;
   }
   .main .purposes .purposes__photo {
-    width: min(368px, min(36.8vw, 36.8vh));
-    height: min(397.3333333333px, min(39.7333333333vw, 39.7333333333vh));
+    width: min(368px, min(46vw, 46vh));
+    height: min(397.3333333333px, min(49.6666666667vw, 49.6666666667vh));
   }
   .main .purposes .purposes-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 70%;
-    gap: min(10px, min(1vw, 1vh));
+    gap: min(10px, min(1.25vw, 1.25vh));
   }
   .main .purposes .purposes-list .purposes-list__item {
     display: flex;
     flex-direction: column;
-    margin-bottom: min(32px, min(3.2vw, 3.2vh));
+    margin-bottom: min(32px, min(4vw, 4vh));
   }
   .main .purposes .purposes-list .purposes-list__item .purposes-list__item-number {
     align-self: center;
     box-sizing: border-box;
     display: block;
-    width: min(57px, min(5.7vw, 5.7vh));
-    height: min(35px, min(3.5vw, 3.5vh));
-    padding: min(8px, min(0.8vw, 0.8vh));
-    margin-bottom: min(8px, min(0.8vw, 0.8vh));
-    border-radius: min(30px, min(3vw, 3vh));
+    width: min(57px, min(7.125vw, 7.125vh));
+    height: min(35px, min(4.375vw, 4.375vh));
+    padding: min(8px, min(1vw, 1vh));
+    margin-bottom: min(8px, min(1vw, 1vh));
+    border-radius: min(30px, min(3.75vw, 3.75vh));
     font-family: "Outfit", sans-serif;
     font-size: min(16px, min(1.6vw, 1.6vh));
     letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
@@ -664,7 +841,7 @@ body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    height: min(80px, min(8vw, 8vh));
+    height: min(80px, min(10vw, 10vh));
     font-family: "Outfit", sans-serif;
     font-size: min(35px, min(3.5vw, 3.5vh));
     letter-spacing: min(0.48px, min(0.048vh, 0.048vw));

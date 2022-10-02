@@ -18,14 +18,14 @@ $GlobalFontweight: 400;
 }
 
 @mixin  AdaptW ($Wpx){
-  width: min($Wpx, min($Wpx/10px*1vw, $Wpx/10px*1vh));
+  width: min($Wpx, min($Wpx/8px*1vw, $Wpx/8px*1vh));
 }
 @mixin AdaptH ($Hpx) {
-  height: min($Hpx, min($Hpx/10px*1vw, $Hpx/10px*1vh));
+  height: min($Hpx, min($Hpx/8px*1vw, $Hpx/8px*1vh));
 }
 
 @function adaptPx ($px){
-  @return min($px, min($px/10px*1vw, $px/10px*1vh))
+  @return min($px, min($px/8px*1vw, $px/8px*1vh))
 }
 
 * {

@@ -1,0 +1,33 @@
+.join-us {
+  margin-top: adaptPx(220px);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: min(1440px, 140vw);
+  background-color: rgba(130, 203, 172, 1);
+
+  .join-us__img-wrap {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-image: url("../../img/main/join-us.png");
+    position: relative;
+    width: min(1440px, 140vw);
+    height: min(min(100vh, 510px), 50vw);
+  }
+
+  .join-us__text {
+    width: min(1140px, 94vw);
+    padding-top: adaptPx(80px);
+    @include AdaptH(0px);
+    align-self: center;
+    .join-us__title {
+      @include AdaptW(657px);
+      @include typography(64px, 64px, left);
+    }
+
+    .join-us__subtitle {
+      @include AdaptW(552px);
+      @include typography(20px, 26px, left);
+    }
+  }
+}
