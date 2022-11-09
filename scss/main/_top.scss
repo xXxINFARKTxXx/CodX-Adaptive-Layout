@@ -17,6 +17,8 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: adaptPx(38px);
     grid-row-gap: adaptPx(38px);
+    justify-items: center;
+    align-items: center;
   }
 
   &__button {
@@ -30,6 +32,7 @@
 }
 
 .nft-card {
+  width: max(350px,50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,10 +43,11 @@
   }
 
   &__info {
-    width: 70%;
-    margin: 5% 9.5% ;
+    width: max(350px,50%);
+    margin: 5% 0%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
   }
   &__name {
     width: 65%;
@@ -51,17 +55,30 @@
   }
   &__number {
     @include typography(20px, 18px, left);
-    width: 700;
+    font-weight: 700;
     &::before{
         content: "#";
     }
   }
   &__enlarge {
+    @include AdaptH(38px);
+    @include AdaptW(38px);
+    border-width: 0px;
   }
   &__enlarge-pic {
+    @include AdaptH(18px);
+    @include AdaptW(18px);
   }
   &__lock {
+    @include AdaptH(38px);
+    @include AdaptW(38px);
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: rgba(255, 127, 150, 1);
   }
   &__lock-pic {
+    @include AdaptH(18px);
+    @include AdaptW(18px);
+
   }
 }
