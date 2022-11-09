@@ -648,7 +648,7 @@ body {
   width: min(332px, min(41.5vw, 41.5vh));
 }
 .main .nft-card__info {
-  width: max(350px, 50%);
+  width: max(290px, 30%);
   margin: 5% 0%;
   display: flex;
   justify-content: space-around;
@@ -695,7 +695,90 @@ body {
   height: min(18px, min(2.25vw, 2.25vh));
   width: min(18px, min(2.25vw, 2.25vh));
 }
+.main .faq {
+  margin: min(55px, min(6.875vw, 6.875vh)) 5vw 0 5vw;
+  width: min(1140px, 84vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .faq__title {
+  width: 100%;
+  margin-bottom: min(25px, min(3.125vw, 3.125vh));
+  font-family: "Outfit", sans-serif;
+  font-size: min(64px, min(6.4vw, 6.4vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(64px, min(6.4vw, 6.4vh));
+  font-weight: 400;
+  text-align: left;
+}
+.main .question {
+  width: 100%;
+  margin: min(48px, min(6vw, 6vh)) min(26px, min(3.25vw, 3.25vh)) min(30px, min(3.75vw, 3.75vh)) min(26px, min(3.25vw, 3.25vh));
+}
+.main .question__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .question__title {
+  font-family: "Outfit", sans-serif;
+  font-size: min(22px, min(2.2vw, 2.2vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(24px, min(2.4vw, 2.4vh));
+  font-weight: 400;
+  text-align: left;
+}
+.main .question__to-details {
+  display: flex;
+  width: min(40px, min(5vw, 5vh));
+  height: min(40px, min(5vw, 5vh));
+  border: none;
+  background-color: #ffffff;
+  transition-duration: 0.5s;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.main .question__to-details-pic {
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+}
+.main .question__to-details-pic__active {
+  transform: rotate(180deg);
+}
+.main .question__details {
+  opacity: 0;
+  transition-duration: 0.5s;
+  width: 100%;
+  height: 0%;
+  font-size: 1px;
+}
+.main .question__details__active {
+  margin: min(40px, min(5vw, 5vh));
+  font-family: "Outfit", sans-serif;
+  font-size: min(22px, min(2.2vw, 2.2vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(24px, min(2.4vw, 2.4vh));
+  font-weight: 400;
+  text-align: left;
+  transition-duration: 0.5s;
+}
+.main .question__details__active1 {
+  opacity: 1;
+}
 
+@media (max-width: 1150px) {
+  .main .top__grid {
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(2, 0.05fr);
+    grid-template-columns: repeat(2, 0.05fr);
+  }
+}
 @media (max-width: 800px) {
   .main .collections__grid {
     grid-template-rows: repeat(3, 1fr);

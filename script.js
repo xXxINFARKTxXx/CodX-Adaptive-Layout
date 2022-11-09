@@ -13,7 +13,7 @@ window.addEventListener(`resize`, () => {
     header.classList.toggle(`active`);
   }
 });
-// header ending
+// header end
 
 // welcome beginning
 function showInfo(node) {
@@ -25,7 +25,7 @@ function hideInfo(node) {
   node.style.visibility = `invisible`;
   node.style.opacity = `0`;
 }
-// welcome ending
+// welcome end
 
 // nftSlideshow beginning
 const slideshow = document.querySelector(`.slideshow`);
@@ -50,13 +50,14 @@ for (let i = 0; i < 3; i++) {
     slideshow.appendChild(imgWrap);
   }
 }
-// nftSlideshow ending
+// nftSlideshow end
 
 // introduction beginning
 class Member {
   static activeMember;
-  static activeMemberImage = document.getElementsByClassName(`member__photo`)[0];
-  
+  static activeMemberImage =
+    document.getElementsByClassName(`member__photo`)[0];
+
   constructor(name) {
     this.btn = document.getElementById(`${name}Btn`);
     this.details = document.getElementById(`${name}Details`);
@@ -64,7 +65,7 @@ class Member {
     this.name = name;
     this.btn.addEventListener(`click`, () => Member.switchActiveTo(this));
   }
-  
+
   static switchActiveTo(member) {
     member.btn.classList.toggle(`active`);
     member.details.classList.toggle(`active`);
@@ -81,4 +82,41 @@ const memberList = [];
 memberNames.forEach((el) => memberList.push(new Member(el)));
 Member.activeMember = memberList[0];
 
-// introduction ending
+// introduction end
+
+// FAQ beginning
+class Question {
+  constructor(btn, img, details) {
+    this.btn = btn;
+    this.img = img;
+    this.details = details;
+    this.btn.addEventListener(`click`, () => this.toggleShowDetails());
+  }
+  toggleShowDetails() {
+    if (this.img.classList.contains(`question__to-details-pic__active`)) {
+      this.details.classList.toggle(`question__details__active1`);
+      setTimeout(() => {
+        this.img.classList.toggle(`question__to-details-pic__active`);
+        this.details.classList.toggle(`question__details__active`);
+      }, 300);
+    } else {
+      this.img.classList.toggle(`question__to-details-pic__active`);
+      this.details.classList.toggle(`question__details__active`);
+      setTimeout(() => {
+        this.details.classList.toggle(`question__details__active1`);
+      }, 300);
+    }
+  }
+}
+
+questionBtns = document.getElementsByClassName(`question__to-details`);
+questionBtnsImgs = document.getElementsByClassName(`question__to-details-pic`);
+questionDtls = document.getElementsByClassName(`question__details`);
+
+let questionsArray = [];
+for (let i = 0; i < questionBtns.length; i++) {
+  questionsArray.push(
+    new Question(questionBtns[i], questionBtnsImgs[i], questionDtls[i])
+  );
+}
+// FAQ end

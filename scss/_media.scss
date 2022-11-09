@@ -1,3 +1,17 @@
+@media (max-width: 1150px) {
+  .main {
+    .top{
+      &__grid {
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: repeat(2, 0.05fr);
+        grid-template-columns: repeat(2, 0.05fr);
+        
+      }
+    }
+  }
+}
+
 @media (max-width: 800px) {
   .main {
     .collections {
