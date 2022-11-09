@@ -1,26 +1,19 @@
 @media (max-width: 1150px) {
   .main {
-    .top{
+    .top {
       &__grid {
         align-items: center;
         justify-content: center;
         grid-template-rows: repeat(2, 0.05fr);
         grid-template-columns: repeat(2, 0.05fr);
-        
       }
     }
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .main {
     .collections {
-      &__grid {
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
-    .top{
       &__grid {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(1, 1fr);
