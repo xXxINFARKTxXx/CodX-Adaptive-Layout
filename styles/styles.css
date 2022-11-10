@@ -625,7 +625,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: min(38px, min(4.75vw, 4.75vh));
-  grid-row-gap: min(38px, min(4.75vw, 4.75vh));
   justify-items: center;
   align-items: center;
 }
@@ -648,8 +647,9 @@ body {
   width: min(332px, min(41.5vw, 41.5vh));
 }
 .main .nft-card__info {
-  width: max(290px, 30%);
-  margin: 5% 0%;
+  box-sizing: border-box;
+  width: min(332px, min(41.5vw, 41.5vh));
+  margin: 5% 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -679,6 +679,7 @@ body {
   height: min(38px, min(4.75vw, 4.75vh));
   width: min(38px, min(4.75vw, 4.75vh));
   border-width: 0px;
+  cursor: pointer;
 }
 .main .nft-card__enlarge-pic {
   height: min(18px, min(2.25vw, 2.25vh));
@@ -690,6 +691,7 @@ body {
   border-radius: 20px;
   border-width: 0px;
   background-color: rgb(255, 127, 150);
+  cursor: pointer;
 }
 .main .nft-card__lock-pic {
   height: min(18px, min(2.25vw, 2.25vh));
@@ -753,7 +755,7 @@ body {
 .main .question__details {
   opacity: 0;
   transition-duration: 0.5s;
-  width: 100%;
+  width: 90%;
   height: 0%;
   font-size: 1px;
 }
@@ -771,18 +773,182 @@ body {
   opacity: 1;
 }
 
+.footer {
+  margin: min(90px, min(11.25vw, 11.25vh)) 10vw min(25px, min(3.125vw, 3.125vh)) 10vw;
+  display: flex;
+  flex-direction: column;
+  height: min(300px, min(37.5vw, 37.5vh));
+}
+.footer__content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
+}
+.footer__content-column {
+  font-family: "Outfit", sans-serif;
+  font-size: min(20px, min(2vw, 2vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(20px, min(2vw, 2vh));
+  font-weight: 400;
+  text-align: left;
+  list-style-type: none;
+  text-decoration: none;
+  margin: min(25px, min(3.125vw, 3.125vh));
+  display: flex;
+  flex-direction: column;
+  gap: min(25px, min(3.125vw, 3.125vh));
+  width: 15%;
+  height: 100%;
+}
+.footer__join {
+  width: 25%;
+}
+.footer__logo {
+  width: 60%;
+  height: auto;
+}
+.footer__scl-ntws {
+  display: flex;
+  gap: 8%;
+}
+.footer__site-title {
+  font-family: "Outfit", sans-serif;
+  font-size: min(20px, min(2vw, 2vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(20px, min(2vw, 2vh));
+  font-weight: 400;
+  text-align: left;
+}
+.footer___items-list {
+  list-style: none;
+}
+.footer__list-item {
+  font-family: "Outfit", sans-serif;
+  font-size: min(14px, min(1.4vw, 1.4vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(16px, min(1.6vw, 1.6vh));
+  font-weight: 400;
+  text-align: left;
+  margin-top: min(5px, min(0.625vw, 0.625vh));
+}
+.footer__list-ref {
+  color: rgb(47, 47, 47);
+}
+.footer__utility-title {
+  font-family: "Outfit", sans-serif;
+  font-size: min(20px, min(2vw, 2vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(20px, min(2vw, 2vh));
+  font-weight: 400;
+  text-align: left;
+}
+.footer__stay-in {
+  width: 40%;
+}
+.footer__stay-in-title {
+  font-family: "Outfit", sans-serif;
+  font-size: min(35px, min(3.5vw, 3.5vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(28.8px, min(2.88vw, 2.88vh));
+  font-weight: 400;
+  text-align: left;
+}
+.footer__email-container {
+  margin: 0px min(40px, min(5vw, 5vh)) 0px 0px;
+  box-sizing: border-box;
+  gap: min(25px, min(3.125vw, 3.125vh));
+  display: flex;
+  justify-content: space-between;
+  height: 15%;
+}
+.footer__email {
+  border-radius: min(20px, min(2.5vw, 2.5vh));
+  border-width: 0px;
+  background-color: rgb(246, 246, 246);
+  width: 80%;
+  padding-left: min(10px, min(1.25vw, 1.25vh));
+}
+.footer__email::-moz-placeholder {
+  font-family: "Outfit", sans-serif;
+  font-size: min(14px, min(1.4vw, 1.4vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(16px, min(1.6vw, 1.6vh));
+  font-weight: 400;
+  text-align: left;
+}
+.footer__email:-ms-input-placeholder {
+  font-family: "Outfit", sans-serif;
+  font-size: min(14px, min(1.4vw, 1.4vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(16px, min(1.6vw, 1.6vh));
+  font-weight: 400;
+  text-align: left;
+}
+.footer__email::placeholder {
+  font-family: "Outfit", sans-serif;
+  font-size: min(14px, min(1.4vw, 1.4vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(16px, min(1.6vw, 1.6vh));
+  font-weight: 400;
+  text-align: left;
+}
+.footer__sign-up-button {
+  width: 30%;
+}
+.footer__copiright {
+  font-family: "Outfit", sans-serif;
+  font-size: min(14px, min(1.4vw, 1.4vh));
+  letter-spacing: min(0.48px, min(0.048vh, 0.048vw));
+  line-height: min(16px, min(1.6vw, 1.6vh));
+  font-weight: 400;
+  text-align: left;
+  align-self: center;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__author {
+  color: rgb(255, 127, 150);
+}
+
 @media (max-width: 1150px) {
   .main .top__grid {
     align-items: center;
     justify-content: center;
-    grid-template-rows: repeat(2, 0.05fr);
-    grid-template-columns: repeat(2, 0.05fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 1000px) {
   .main .collections__grid {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .main .top__grid {
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .footer {
+    height: auto;
+  }
+  .footer__content-container {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__content-column {
+    width: auto;
+    height: auto;
   }
 }
 @media (max-width: 620px) {

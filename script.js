@@ -98,13 +98,13 @@ class Question {
       setTimeout(() => {
         this.img.classList.toggle(`question__to-details-pic__active`);
         this.details.classList.toggle(`question__details__active`);
-      }, 300);
+      }, 400);
     } else {
       this.img.classList.toggle(`question__to-details-pic__active`);
       this.details.classList.toggle(`question__details__active`);
       setTimeout(() => {
         this.details.classList.toggle(`question__details__active1`);
-      }, 300);
+      }, 500);
     }
   }
 }

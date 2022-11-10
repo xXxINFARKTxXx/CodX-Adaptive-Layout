@@ -1,0 +1,107 @@
+.footer {
+    margin: adaptPx(90px) 10vw adaptPx(25px) 10vw;
+    display: flex;
+    flex-direction: column;
+    height: adaptPx(300px);
+    &__content-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90%;
+    }
+    &__content-column {
+        @include typography(20px, 20px, left);
+        list-style-type: none;
+        text-decoration: none;
+        margin: adaptPx(25px);
+        display: flex;
+        flex-direction: column;
+        gap: adaptPx(25px);
+        width: 15%;
+        height: 100%;
+    }
+    &__join {
+        width: 25%;
+    }
+    &__logo {
+        width: 60%;
+        height: auto;
+    }
+    &__join-title {
+    }
+    &__scl-ntws {
+        display: flex;
+        gap: 8%;
+        
+    }
+    &__scl-ntwk-ref {
+    }
+    &__sn-img{
+    }
+    &__site {
+    }
+    &__site-title {
+        @include typography(20px, 20px, left);
+    }
+    &___items-list {
+        list-style: none;
+    }
+    &__list-item {
+        @include typography(14px, 16px, left);
+        margin-top: adaptPx(5px);
+    }
+    &__list-ref {
+        color: rgba(47, 47, 47, 1);
+    }
+    &__utility {
+        
+    }
+    &__utility-title {
+        @include typography(20px, 20px, left);
+    }
+    &__stay-in {
+        width: 40%;
+    }
+    &__stay-in-title {
+        @include typography(35px, 28.8px, left);
+    }
+    &__stay-in-details {
+    }
+    &__email-container {
+        margin: 0px adaptPx(40px) 0px 0px;
+        box-sizing: border-box;
+        gap: adaptPx(25px);
+        display: flex;
+        justify-content: space-between;
+        height: 15%;
+        
+    }
+    &__email {
+        border-radius: adaptPx(20px);
+        border-width: 0px;
+        background-color: rgba(246, 246, 246, 1);
+        width: 80%;
+        padding-left: adaptPx(10px);
+
+        &::placeholder{
+            @include typography(14px, 16px, left);
+        }
+    }
+    &__sign-up-button {
+        width: 30%;
+    }
+    &__copiright {
+        @include typography(14px, 16px, left);
+        align-self: center;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__rights {
+    }
+    &__authors {
+    }
+    &__author {
+        color: rgba(255, 127, 150, 1);
+    }
+}

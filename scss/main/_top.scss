@@ -16,7 +16,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: adaptPx(38px);
-    grid-row-gap: adaptPx(38px);
+    // grid-row-gap: adaptPx(38px);
     justify-items: center;
     align-items: center;
   }
@@ -28,6 +28,7 @@
     border-radius: 0px;
     box-sizing: border-box;
     align-self: center;
+    
   }
 }
 
@@ -43,8 +44,9 @@
   }
 
   &__info {
-    width: max(290px,30%);
-    margin: 5% 0%;
+    box-sizing: border-box;
+    @include AdaptW(332px);
+    margin: 5% 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -64,6 +66,7 @@
     @include AdaptH(38px);
     @include AdaptW(38px);
     border-width: 0px;
+    cursor: pointer;
   }
   &__enlarge-pic {
     @include AdaptH(18px);
@@ -75,6 +78,7 @@
     border-radius: 20px;
     border-width: 0px;
     background-color: rgba(255, 127, 150, 1);
+    cursor: pointer;
   }
   &__lock-pic {
     @include AdaptH(18px);
