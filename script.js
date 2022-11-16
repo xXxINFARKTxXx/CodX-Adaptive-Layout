@@ -61,7 +61,7 @@ class Member {
   constructor(name) {
     this.btn = document.getElementById(`${name}Btn`);
     this.details = document.getElementById(`${name}Details`);
-    this.picSrc = `img/main/introduction/${name}.png`;
+    this.picSrc = `/img/main/introduction/${name}.png`;
     this.name = name;
     this.btn.addEventListener(`click`, () => Member.switchActiveTo(this));
   }
